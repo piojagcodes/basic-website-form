@@ -11,7 +11,7 @@
 <body>
   <br />Only dead ones witnessed the end of war - Plato<br />
 
-  <form action="Login.php" method="post">
+  <form action="login.php" method="post">
     Login: <br />
     <input type="text" name="login" /> <br />
     Password: <br />
