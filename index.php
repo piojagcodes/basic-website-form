@@ -13,10 +13,10 @@
 
   <form action="login.php" method="post">
     Login: <br />
-    <input type="text" name="login" /> <br />
+    <input type="text" name="login" /> <br /> <!-- Input field for user login -->
     Password: <br />
-    <input type="text" name="password" /> <br />
-    <input type="submit" value="Sign up" />
+    <input type="text" name="password" /> <br /> <!-- Input field for user password -->
+    <input type="submit" value="Sign up" /> <!-- Submit button for the form -->
   </form>
 
   <header>
