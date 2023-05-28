@@ -1,3 +1,7 @@
+<?php
+    session_start(); // Start a new or resume an existing session
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +14,7 @@
 </head>
 <body>
 <?php
-    echo "<p>Welcome ".$user."!";
+    echo "<p>Welcome ".$_SESSION['user']."!"; // Display a personalized welcome message using the value stored in the 'user' session variable
 ?>
 </body>
 </html>

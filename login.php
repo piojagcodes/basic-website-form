@@ -1,4 +1,7 @@
 <?php
+
+    session_start(); // Start a new or resume an existing session
+
     require_once "connect.php"; // Include the "connect.php" file for establishing a database connection
 
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // Set the error reporting mode
@@ -20,7 +23,7 @@
         $how_many_users = $result->num_rows; // Get the number of rows returned by the query
         if ($how_many_users > 0) {
             $row = $result->fetch_assoc(); 
-            $user = $row['user']; // Retrieve the 'user' value from the query result
+            $_SESSION['user'] = $row['user']; // Retrieve the 'user' value from the query result
 
             $result->free_result(); // Free the query result memory
             header('Location: game.php'); // Redirect the user to the game.php page
